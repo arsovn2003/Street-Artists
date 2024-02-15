@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Artists</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/visitorhomepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Home Page  -->
+
+<section id="home-page">
+    <header>
+        <span>Street ARTists</span>
+    </header>
+    
+    <div class="logo-container">
+        <a href="">
+            <img src="./images/Logo.png">  
+        </a>
+    </div>
+    <div class="container">
+        <div class="artist-container">
+            <div class="top-container">
+                <p>Join as Artist</p>
+                <select id="selected">
+                    <option value="choose">Choose</option>
+                </select>
+            </div>   
+        </div>
+        <div class="visitor-container">
+            <p>Join as Visitor</p>
+        </div>
+    </div>
+</section>
+
+    <!-- VISITOR HOME PAGE  -->
+
+<section id="visitor-home-page">
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="./images/Logo.png">  
+            </a>
+        </div>
+        <div class="title">
+            <p>Street ARTists</p>
+        </div>
+        <div class="icon">
+            <img src="./images/icon.png">
+        </div>
+    </header>
+
+    <section id="bricks">
+        <div class="left-container">
+            <h2>Looking for <br> masterpiece?</h2>
+        </div>
+        <div class="right-container">
+            <button id="find-btn">Find one now!</button>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <table>
+            <tr>
+                <td><img src="./images/image1.jpg" alt="Image 1"></td>
+                <td><img src="./images/image2.jpg" alt="Image 2"></td>
+                <td><img src="./images/image3.jpg" alt="Image 3"></td>
+            </tr>
+            <tr>
+                <td><img src="./images/image4.jpg" alt="Image 1"></td>
+                <td><img src="./images/image5.jpg" alt="Image 2"></td>
+                <td><img src="./images/image6.jpg" alt="Image 3"></td>
+            </tr>
+        </table>
+    </section>
+    <div class="carousel-container">
+        <!-- FIX  --><!-- FIX  --><!-- FIX  --><!-- FIX  -->
+        <button class="carousel-arrow left" id="nextBtn">&#8249;</button>
+        <!-- FIX  --><!-- FIX  --><!-- FIX  --><!-- FIX  -->
+        <div class="carousel-content">
+            <div class="carousel-item">
+                <div class="image">
+                    <img src="./images/Elipse.png">
+                </div>
+                <div class="content">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.
+                </div>
+                <div class="line-centered"></div>
+                <div class="right-text">
+                    Lorem ipsum dolor 
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image">
+                    <img src="./images/Elipse.png">
+                </div>
+                <div class="content">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.
+                </div>
+                <div class="line-centered"></div>
+                <div class="right-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+                <div class="image">
+                    <img src="./images/Elipse.png">
+                </div>
+                <div class="content">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.
+                </div>
+                <div class="line-centered"></div>
+                <div class="right-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- FIX  --><!-- FIX  --><!-- FIX  --><!-- FIX  -->
+        <button class="carousel-arrow right" id="prevBtn">&#8250;</button>
+        <!-- FIX  --><!-- FIX  --><!-- FIX  --><!-- FIX  -->
+    </div>
+</section>    
+
+    <!-- VISITOR LISTING PAGE  -->
+
+    <section id="visitor-listing-page">
+        <header>
+            <div class="logo">
+                <img src="./images/Logo.png" id="logoImage">
+            </div>
+            <div class="title">
+                <p>Street ARTists</p>
+            </div>
+            <div class="icon">
+                <img src="./images/icon.png">
+            </div>
+        </header>
+        <div id="filter">
+            <img src="./images/filter.png">
+        </div>
+        <div id="fullscreen-content" class="hidden">
+            <div class="btn-div">
+            <button id="close-fullscreen-button">X</button>
+            <div id="filter-done">
+                <img src="./images/done.png">
+            </div>
+            </div>
+            <h1 id="filterTitle">Filter by</h1>
+            <label>By Item Title</label>
+            <br>
+            <input type="text" id="byTitle" class="input-search">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <label>By Artist</label>
+            <br>
+            <select id="byArtist">
+                <option value="choose">Choose</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <label>By Price</label><br><br>
+            <div class="by-price-container">
+                <label>Min: </label>
+                <input type="number" id="Minimum"><br>
+                <label>Max: </label>
+                <input type="number" id="Maximum"><br>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <select id="byType">
+                <option value="choose">Choose</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <div id="filtered-art-container"></div>
+    </section>
+
+    <!-- ARTIST HOME PAGE  -->
+
+    <section id="artist-home-page">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="./images/Logo.png">  
+                </a>
+            </div>
+            <div class="title">
+                <p id="artistParagraph"></p>
+            </div>
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" id="goHome">Home</a></li>
+                    <li><a href="#artist-items-page">Items</a></li>
+                    <li><a href="#auction-container">Auction</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="data-container">
+            <div class="items-sold">
+                <div class="sold-container">
+                    <p>Total Items Sold</p>
+                    <span><span id="itemsSold"></span>/<span id="itemsNumber"></span></span>
+                </div>
+            </div>
+            <div class="total-income">
+                <p>Total Income</p>
+                <span>$<span id="total"></span></span>
+            </div>
+            <div class="live-auc">
+                <p>Live Auctioning Item</p>
+                <span>$<span id="cost"></span></span>
+                <p>current bid</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- ARTIST ITEMS PAGE  -->
+    
+    <section id="artist-items-page" class="position">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="./images/Logo.png">  
+                </a>
+            </div>
+            <div class="title">
+                <p id="artistParagraph"></p>
+            </div>
+        <nav class="navbar">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#" id="goHome">Home</a></li>
+                    <li><a href="#artist-items-page">Items</a></li>
+                    <li><a href="#auction-container">Auction</a></li>
+                </ul>
+        </nav>
+        </header>
+        <div class="add-container">
+            <div class="bordered-div">
+                <button id="show"><h2>+ Add new item</h2></button>
+            </div>
+        </div>
+        <div class="fullscreenDiv">
+            <button id="close">X</button>
+            <div class="fullscreenContainer">
+                <div class="flex-items">
+                    <h2>Add new Item</h2>
+                    <div class="check-div">
+                        <label>Is published</label>
+                        <input type="checkbox" id="check">
+                     </div>
+                </div>
+                <br>
+                <p>Title</p>
+                <input type="text" id="addTitle">
+                <br><br>
+                <p>Description</p>
+                <textarea id="descriptionArea"></textarea>
+                <br><br>
+                <div class="type">
+                <p>Type</p>
+                <input type="text" id="addType">
+                </div>
+                <div class="price">
+                <p>Price</p>
+                <input type="number" id="addPrice">
+                </div>
+                <br><br>
+                <p>Image URL</p>
+                <input type="text" id="addImg">
+                <p id="paragraph-or">or</p>
+                <div class="camera-div" id="camera">
+                    <div class="camera-img">
+                        <img src="./images/camera.png"><br>
+                    </div>
+                    <p id="p">Take a snapshot</p>
+                </div>
+                <div id="cameraFeed" style="display: none;">
+                    <video id="videoElement" autoplay></video>
+                </div>
+                <div class="buttons-div">
+                    <button id="addNewItem-btn">Add New Item</button>
+                    <button id="cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="artist-items-container"></div>
+        <!-- <div id="camera" style="width: 640px; height: 480px; border: 1px solid black; cursor: pointer;">
+            Click here to start the camera
+        </div> -->
+        
+    </section>
+
+    <section id="auction-container">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="./images/Logo.png">  
+                </a>
+            </div>
+            <div class="title">
+                <p id="artistParagraph"></p>
+            </div>
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                    <ul class="nav-links">
+                        <li><a href="#" id="goHome">Home</a></li>
+                        <li><a href="#artist-items-page">Items</a></li>
+                        <li><a href="#auction-container">Auction</a></li>
+                    </ul>
+            </nav>
+        </header>
+    </section>
+
+    <script>
+            const cameraDiv = document.getElementById('camera');
+            const cameraFeedDiv = document.getElementById('cameraFeed');
+            const videoElement = document.getElementById('videoElement');
+
+            cameraDiv.addEventListener('click', startCamera);
+
+            async function startCamera() {
+                try {
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                    videoElement.srcObject = stream;
+                    cameraDiv.style.display = 'none';
+                    cameraFeedDiv.style.display = 'block';
+                } catch (error) {
+                    console.error('Error accessing the camera:', error);
+                }
+            }
+        </script>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./pages/artists-home.js"></script>
+    <script src="./pages/home-page.js"></script>
+    <script src="./pages/visitor-home.js"></script>
+    <script src="./pages/visitor-listing.js"></script>
+    <script src="./pages/artists-items.js"></script>
+</body>
+</html>
